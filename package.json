@@ -1,0 +1,65 @@
+{
+  "name": "start-react-vite-ts-tailwind-antd-tanstack",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Start project with Vite + React + TypeScript + Tailwind CSS + Ant Design + Tanstack library",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "release": "standard-version",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@tanstack/react-query": "^5.74.3",
+    "@tanstack/react-router": "^1.116.0",
+    "@tanstack/react-store": "^0.7.0",
+    "antd": "^5.24.7",
+    "antd-img-crop": "^4.24.0",
+    "axios": "^1.8.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.22.0",
+    "@tanstack/eslint-plugin-query": "^5.73.3",
+    "@tanstack/eslint-plugin-router": "^1.115.0",
+    "@tanstack/react-query-devtools": "^5.74.3",
+    "@tanstack/react-router-devtools": "^1.116.0",
+    "@tanstack/router-plugin": "^1.116.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "standard-version": "^9.5.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "web-vitals": "^4.2.4"
+  }
+}
